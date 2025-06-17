@@ -145,30 +145,11 @@ header::after {
   background: rgba(240, 239, 244, 0.1);
 }
 
-
 /* Social Links */
-.social-links {
-  display: flex;
-  gap: 1.2rem;
-  margin: 1.5rem 0 2rem;
-  align-items: center;
-}
-
-.social-link {
+.social-link.fab, 
+.social-link.far {
+  font-size: 1.1rem;
+  color: var(--white);
   width: 20px;
-  height: 20px;
-  opacity: 0.8;
-  transition: all 0.3s ease;
-  filter: drop-shadow(0 0 4px var(--text-glow));
-}
-
-.social-link:hover {
-  opacity: 1;
-  transform: translateY(-1px);
-  filter: drop-shadow(0 0 6px var(--white));
-}
-
-/* Adjust spacing */
-.company:first-child {
-  margin-top: 0.5rem;
+  text-align: center;
 }
