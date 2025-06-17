@@ -149,13 +149,11 @@ header::after {
 .social-link.fab, 
 .social-link.far {
   font-size: 1.1rem;
-  color: var(--orange);
+  color: var(--gold);
   width: 20px;
   text-align: center;
-  text-shadow: 0 0 16px var(--text-glow);
 }
 
-/* Social Links */
 .social-links {
   display: flex;
   gap: 1.2rem;
