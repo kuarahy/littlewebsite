@@ -2,9 +2,11 @@
     --graphite: #1a1a1a;        /* Primary background */
     --white: #f0eff4;           /* Primary text */
     --blue: #1e96ff;            /* Accent (company names) */
-    --yellow: #ffa723;          /* Highlight (durations) */
-    --red: #b50e0e;             /* Interactive (links/hover) */
+    --gold: #ffa723;            /* Changed from orange to gold */
+    --red: #b50e0e;             /* Interactive elements */
     --black: #000000;           /* Deep contrasts */
+    --subtitle: #a0a0a0;        /* New subtitle color */
+    --tools: #b50e0e;           /* Tools category color */
 }
 
 body {
@@ -13,66 +15,87 @@ body {
     font-family: 'Inter', sans-serif;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
-    line-height: 1.6;
+    padding: 2rem 2rem 2rem 4rem; /* More left space */
+    line-height: 1.5;
+    font-size: 0.9rem; /* Smaller base font */
 }
 
 /* Typography */
 h1 {
     font-weight: 600;
-    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-size: 1.5rem; /* Smaller heading */
     margin-bottom: 0.25rem;
     color: var(--white);
 }
 
 .subtitle {
-    color: rgba(240, 239, 244, 0.8);
-    font-size: 1.1rem;
+    color: var(--subtitle);
+    font-size: 0.9rem; /* Smaller subtitle */
     margin-bottom: 2rem;
+}
+
+/* Content Blocks */
+.content-block {
+    max-width: 600px; /* Constrained paragraph width */
+    margin-bottom: 1.5rem;
 }
 
 /* Experience Sections */
 .company {
     color: var(--blue);
-    font-size: 1.2rem;
-    margin: 1.5rem 0 0.25rem;
+    font-size: 1rem; /* Smaller company names */
+    margin: 1.25rem 0 0.25rem;
 }
 
 .duration {
-    color: var(--yellow);
+    color: var(--gold);
     display: inline-block;
     background: rgba(255, 167, 35, 0.1);
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
     margin-bottom: 0.5rem;
+    font-size: 0.8rem; /* Smaller duration */
+}
+
+/* Tools Category */
+.tools {
+    color: var(--tools);
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.tool-item {
+    background: rgba(181, 14, 14, 0.1);
+    color: var(--tools);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
 }
 
 /* Links */
 a {
-    color: var(--white);
+    color: var(--red);
     text-decoration: none;
     position: relative;
+    border-bottom: 1px solid var(--red); /* Always visible */
+    padding-bottom: 1px;
 }
 
-a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: var(--red);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-a:hover::after {
-    transform: scaleX(1);
+a:hover {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
 }
 
 /* Minimalist divider */
 header {
     border-bottom: 1px solid rgba(240, 239, 244, 0.1);
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
