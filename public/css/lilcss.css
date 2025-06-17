@@ -1,101 +1,108 @@
 :root {
-    --graphite: #1a1a1a;        /* Primary background */
-    --white: #f0eff4;           /* Primary text */
-    --blue: #1e96ff;            /* Accent (company names) */
-    --gold: #ffa723;            /* Changed from orange to gold */
-    --red: #b50e0e;             /* Interactive elements */
-    --black: #000000;           /* Deep contrasts */
-    --subtitle: #a0a0a0;        /* New subtitle color */
-    --tools: #b50e0e;           /* Tools category color */
+  --graphite: #1a1a1a;
+  --white: #f0eff4;
+  --blue: #1e96ff;
+  --gold: #ffa723;
+  --red: #b50e0e;
+  --black: #000000;
+  --subtitle: #a0a0a0;
+  --tools: #b50e0e;
+  --text-glow: rgba(240, 239, 244, 0.4);
 }
 
 body {
-    background-color: var(--graphite);
-    color: var(--white);
-    font-family: 'Inter', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 2rem 2rem 4rem; /* More left space */
-    line-height: 1.5;
-    font-size: 0.9rem; /* Smaller base font */
+  background-color: var(--graphite);
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  max-width: 600px;
+  margin: 0;
+  padding: 2rem 2rem 2rem 2.5rem; /* Extreme left alignment */
+  line-height: 1.4;
+  font-size: 0.85rem;
 }
 
-/* Typography */
+/* Left-aligned text column */
+.content-column {
+  max-width: 380px; /* Narrow column */
+  margin-right: auto;
+}
+
+/* Glowing text effects */
+h1, .subtitle, .company, .duration, .tools, p {
+  text-shadow: 0 0 8px var(--text-glow);
+}
+
 h1 {
-    font-weight: 600;
-    font-size: 1.5rem; /* Smaller heading */
-    margin-bottom: 0.25rem;
-    color: var(--white);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 0.15rem;
+  letter-spacing: -0.03rem;
 }
 
 .subtitle {
-    color: var(--subtitle);
-    font-size: 0.9rem; /* Smaller subtitle */
-    margin-bottom: 2rem;
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin-bottom: 1.8rem;
+  text-shadow: 0 0 6px rgba(160, 160, 160, 0.3);
 }
 
-/* Content Blocks */
-.content-block {
-    max-width: 600px; /* Constrained paragraph width */
-    margin-bottom: 1.5rem;
-}
-
-/* Experience Sections */
 .company {
-    color: var(--blue);
-    font-size: 1rem; /* Smaller company names */
-    margin: 1.25rem 0 0.25rem;
+  color: var(--blue);
+  font-size: 0.95rem;
+  margin: 1.2rem 0 0.15rem;
+  text-shadow: 0 0 6px rgba(30, 150, 255, 0.3);
 }
 
 .duration {
-    color: var(--gold);
-    display: inline-block;
-    background: rgba(255, 167, 35, 0.1);
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
-    margin-bottom: 0.5rem;
-    font-size: 0.8rem; /* Smaller duration */
+  color: var(--gold);
+  font-size: 0.75rem;
+  text-shadow: 0 0 5px rgba(255, 167, 35, 0.3);
 }
 
-/* Tools Category */
 .tools {
-    color: var(--tools);
-    font-size: 0.9rem;
-    margin: 0.5rem 0;
-}
-
-.tools-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 0.5rem 0 1rem;
+  color: var(--tools);
+  font-size: 0.8rem;
+  margin: 0.8rem 0 0.3rem;
+  text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
 }
 
 .tool-item {
-    background: rgba(181, 14, 14, 0.1);
-    color: var(--tools);
-    padding: 0.2rem 0.5rem;
-    border-radius: 3px;
-    font-size: 0.8rem;
+  background: rgba(181, 14, 14, 0.08);
+  color: var(--tools);
+  padding: 0.15rem 0.4rem;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  text-shadow: 0 0 4px rgba(181, 14, 14, 0.2);
 }
 
-/* Links */
 a {
-    color: var(--red);
-    text-decoration: none;
-    position: relative;
-    border-bottom: 1px solid var(--red); /* Always visible */
-    padding-bottom: 1px;
+  color: var(--red);
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 1px;
+  text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
+  transition: all 0.2s ease;
 }
 
 a:hover {
-    color: var(--gold);
-    border-bottom-color: var(--gold);
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+  text-shadow: 0 0 7px rgba(255, 167, 35, 0.4);
 }
 
-/* Minimalist divider */
+/* Ultra-minimalist divider */
 header {
-    border-bottom: 1px solid rgba(240, 239, 244, 0.1);
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background: rgba(240, 239, 244, 0.1);
 }
