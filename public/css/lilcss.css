@@ -8,7 +8,17 @@
   --subtitle: #a0a0a0;
   --tools: #b50e0e;
   --text-glow: rgba(240, 239, 244, 0.4);
+
+  /* Font stack */
+  --font-title: 'Space Grotesk', 'Inter', sans-serif;
+  --font-subtitle: 'Inter', sans-serif;
+  --font-company: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+  --font-tools: 'IBM Plex Mono', monospace;
+  --font-duration: 'Inter', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500&display=swap');
 
 body {
   background-color: var(--graphite);
