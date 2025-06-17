@@ -64,6 +64,7 @@ h1 {
 .company {
   font-family: var(--font-company);
   font-weight: 500;
+  font-style: italic; /* For subtle differentiation */
   font-size: 0.95rem;
   color: var(--orange);
   margin: 1.4rem 0 0.2rem;
@@ -128,7 +129,7 @@ a {
   font-family: var(--font-body);
   color: var(--gold);
   text-decoration: none;
-  border-bottom: 1px solid var(--skyblue);
+  border-bottom: 1px solid var(--pink);
   padding-bottom: 1px;
   text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
   transition: all 0.2s ease;
@@ -144,6 +145,30 @@ header::after {
   background: rgba(240, 239, 244, 0.1);
 }
 
-.company {
-  font-style: italic; /* For subtle differentiation */
+
+/* Social Links */
+.social-links {
+  display: flex;
+  gap: 1.2rem;
+  margin: 1.5rem 0 2rem;
+  align-items: center;
+}
+
+.social-link {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 4px var(--text-glow));
+}
+
+.social-link:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 6px var(--white));
+}
+
+/* Adjust spacing */
+.company:first-child {
+  margin-top: 0.5rem;
 }
