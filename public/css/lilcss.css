@@ -28,8 +28,8 @@ body {
 }
 
 /* Glowing text effects */
-h1, .subtitle, .company, .duration, .tools, p {
-  text-shadow: 0 0 8px var(--text-glow);
+.subtitle, .company, .duration, .tools, p {
+  text-shadow: 0 0 16px var(--text-glow);
 }
 
 h1 {
