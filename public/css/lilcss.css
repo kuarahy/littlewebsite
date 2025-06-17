@@ -64,10 +64,21 @@ h1 {
   font-family: var(--font-company);
   font-weight: 500;
   font-size: 0.95rem;
-  color: var(--red);
+  color: var(--yellow);
   margin: 1.4rem 0 0.2rem;
   text-shadow: 0 0 6px rgba(30, 150, 255, 0.3);
   letter-spacing: 0.2px;
+}
+
+/* Job Name */
+.position {
+    font-family: var(--font-company);
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: var(--pink);
+    margin: 1.4rem 0 0.2rem;
+    text-shadow: 0 0 6px rgba(30, 150, 255, 0.3);
+    letter-spacing: 0.2px;
 }
 
 /* Duration */
@@ -107,7 +118,7 @@ h1 {
 /* Body Text */
 p {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.85rem;
   margin: 0.5rem 0;
 }
@@ -115,9 +126,9 @@ p {
 /* Links */
 a {
   font-family: var(--font-body);
-  color: var(--pink);
+  color: var(--gold);
   text-decoration: none;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--skyblue);
   padding-bottom: 1px;
   text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
   transition: all 0.2s ease;
