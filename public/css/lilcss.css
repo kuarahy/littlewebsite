@@ -125,7 +125,7 @@ p {
 }
 
 /* Links */
-a {
+a{
   font-family: var(--font-body);
   color: var(--gold);
   text-decoration: none;
@@ -133,6 +133,12 @@ a {
   padding-bottom: 1px;
   text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
   transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 6px var(--pink));
 }
 
 header::after {
