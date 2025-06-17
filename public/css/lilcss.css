@@ -16,6 +16,7 @@
   --font-title: 'Space Grotesk', 'Inter', sans-serif;
   --font-subtitle: 'Inter', sans-serif;
   --font-company: 'IBM Plex Mono', monospace;
+  --font-position: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-tools: 'IBM Plex Mono', monospace;
   --font-duration: 'Inter', sans-serif;
@@ -64,7 +65,7 @@ h1 {
   font-family: var(--font-company);
   font-weight: 500;
   font-size: 0.95rem;
-  color: var(--yellow);
+  color: var(--orange);
   margin: 1.4rem 0 0.2rem;
   text-shadow: 0 0 6px rgba(30, 150, 255, 0.3);
   letter-spacing: 0.2px;
@@ -76,7 +77,6 @@ h1 {
     font-weight: 500;
     font-size: 0.75rem;
     color: var(--pink);
-    margin: 1.4rem 0 0.2rem;
     text-shadow: 0 0 6px rgba(30, 150, 255, 0.3);
     letter-spacing: 0.2px;
 }
