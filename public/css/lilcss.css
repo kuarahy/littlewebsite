@@ -84,7 +84,7 @@ h1 {
   font-family: var(--font-tools);
   font-weight: 500;
   font-size: 0.75rem;
-  color: var(--skyblue);
+  color: var(--purple);
   margin: 0.8rem 0 0.3rem;
   text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
   letter-spacing: 0.5px;
@@ -117,7 +117,7 @@ a {
   font-family: var(--font-body);
   color: var(--pink);
   text-decoration: none;
-  border-bottom: 1px solid var(--pink);
+  border-bottom: 1px solid var(--gold);
   padding-bottom: 1px;
   text-shadow: 0 0 5px rgba(181, 14, 14, 0.3);
   transition: all 0.2s ease;
