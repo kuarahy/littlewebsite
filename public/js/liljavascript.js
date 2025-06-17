@@ -1,1 +1,1 @@
-console.log("See ya, Space Cowboy...")
+console.log("See ya, Space Cowboy...");
